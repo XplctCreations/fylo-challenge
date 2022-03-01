@@ -1,0 +1,884 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;600;700&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+}
+
+body .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .header .container .menu {
+  font-family: "raleway";
+  font-weight: 700;
+}
+
+body .header .container .menu ul {
+  gap: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+body .header .container .menu a {
+  text-decoration: none;
+  color: #070439;
+}
+
+body .header .container .menu a:hover {
+  color: white;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  background-color: #070439;
+  padding: 1em;
+  border-radius: 0.3em;
+}
+
+body .hero {
+  padding: 5em;
+}
+
+body .hero .hero-section {
+  margin-top: 7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .hero .hero-section .right-col img {
+  width: 450px;
+}
+
+body .hero .hero-section .right-col img:hover {
+  -webkit-transform: translateX(-5em);
+          transform: translateX(-5em);
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+
+body .hero .hero-section .left-col h1 {
+  font-family: "raleway";
+  width: 15em;
+  font-weight: 700;
+  font-size: 30px;
+  color: #070439;
+  margin-bottom: 0.5em;
+  line-height: 1.5em;
+}
+
+body .hero .hero-section .left-col h3 {
+  font-family: "open sans";
+  font-size: 15px;
+  width: 32em;
+  font-weight: 600;
+  color: #070439;
+  line-height: 1.8em;
+}
+
+body .hero .hero-section .left-col .sign-up {
+  padding-top: 1em;
+}
+
+body .hero .hero-section .left-col .sign-up input {
+  width: 25em;
+  height: 3.5em;
+  padding-left: 1em;
+  font-family: "open sans";
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+body .hero .hero-section .left-col .sign-up ::-webkit-input-placeholder {
+  font-family: "open sans";
+  color: #d6d3d3;
+}
+
+body .hero .hero-section .left-col .sign-up :-ms-input-placeholder {
+  font-family: "open sans";
+  color: #d6d3d3;
+}
+
+body .hero .hero-section .left-col .sign-up ::-ms-input-placeholder {
+  font-family: "open sans";
+  color: #d6d3d3;
+}
+
+body .hero .hero-section .left-col .sign-up ::placeholder {
+  font-family: "open sans";
+  color: #d6d3d3;
+}
+
+body .hero .hero-section .left-col .sign-up a {
+  text-decoration: none;
+  background-color: #3065f8;
+  color: white;
+  font-family: "raleway";
+  font-weight: 600;
+  margin: 0.5em;
+  padding: 1em;
+  border-radius: 0.3em;
+  padding-left: 4em;
+  padding-right: 4em;
+  -webkit-box-shadow: 3px 3px 10px #c5c4c4;
+          box-shadow: 3px 3px 10px #c5c4c4;
+}
+
+body .productive {
+  position: relative;
+  margin-top: 10em;
+}
+
+body .productive .desktop-curve {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: -75px;
+}
+
+body .productive .container {
+  padding-top: 15em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #f6f6fe;
+}
+
+body .productive .right-col img {
+  width: 450px;
+}
+
+body .productive .right-col img:hover {
+  -webkit-transform: translateX(-5em);
+          transform: translateX(-5em);
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+
+body .productive .left-col h1 {
+  font-family: "raleway";
+  font-weight: 700;
+  font-size: 30px;
+  color: #070439;
+  margin-bottom: 1em;
+}
+
+body .productive .left-col h3 {
+  font-family: "open sans";
+  font-weight: 700;
+  font-size: 14px;
+  width: 33em;
+  line-height: 2em;
+  color: #070439;
+}
+
+body .productive .left-col .work {
+  margin-top: 1em;
+  border-bottom: 1.5px solid #4e9f8f;
+  padding-bottom: 0.5em;
+  width: 13em;
+}
+
+body .productive .left-col .work a {
+  font-family: "raleway";
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: #4e9f8f;
+}
+
+body .productive .left-col .tweet {
+  width: 25em;
+  margin-top: 3em;
+  background-color: white;
+  padding: 2em;
+  display: block;
+  border-radius: 1em;
+  -webkit-box-shadow: 5px 5px 25px #dddcdc;
+          box-shadow: 5px 5px 25px #dddcdc;
+}
+
+body .productive .left-col .tweet:hover {
+  -webkit-transform: translateX(5em);
+          transform: translateX(5em);
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+
+body .productive .left-col .tweet h3 {
+  font-family: "open sans";
+  font-size: 11px;
+  width: 25em;
+  letter-spacing: 0.08em;
+  line-height: 2em;
+  color: #070439;
+}
+
+body .productive .left-col .tweet .account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2em;
+}
+
+body .productive .left-col .tweet .account img {
+  height: 50px;
+  border-radius: 50em;
+}
+
+body .productive .left-col .tweet .account .name {
+  padding: 0.5em;
+  padding-left: 1em;
+  line-height: 1.5em;
+}
+
+body .productive .left-col .tweet .account .name h4 {
+  font-family: "raleway";
+  color: #070439;
+  font-weight: 700;
+  margin: 0;
+}
+
+body .productive .left-col .tweet .account .name h5 {
+  font-family: "raleway";
+  color: #070439;
+  margin: 0;
+}
+
+body .early-access {
+  background-color: #585989;
+}
+
+body .early-access .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .early-access .container .left-col h1 {
+  font-family: "raleway";
+  font-weight: 700;
+  font-size: 28px;
+  color: white;
+  margin-bottom: 0.5em;
+}
+
+body .early-access .container .left-col h3 {
+  font-family: "open sans";
+  font-weight: 400;
+  font-size: 14px;
+  width: 30em;
+  line-height: 1.8em;
+  color: white;
+}
+
+body .early-access .container .right-col {
+  width: 30em;
+  padding-right: 8em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .early-access .container .right-col .email-input input {
+  width: 40em;
+  height: 4.5em;
+  border-radius: 0.3em;
+  padding-left: 1em;
+  font-family: "open sans";
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+body .early-access .container .right-col a {
+  margin-top: 1.5em;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "raleway";
+  font-weight: 600;
+  background-color: #3065f8;
+  padding: 3em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  color: white;
+  border-radius: 0.3em;
+  -webkit-box-shadow: 3px 3px 10px #47487b;
+          box-shadow: 3px 3px 10px #47487b;
+}
+
+body .bottom .container {
+  background-color: #070439;
+}
+
+body .bottom .container .left-col img:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translateY(-1em);
+          transform: translateY(-1em);
+}
+
+body .bottom .container .left-col .contact h4 {
+  font-family: "open sans";
+  color: white;
+  margin-left: 1em;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+body .bottom .container .left-col .contact .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+
+body .bottom .container .left-col .contact .mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .bottom .container .middle-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5em;
+}
+
+body .bottom .container .middle-col a {
+  text-decoration: none;
+  font-family: "raleway";
+  color: white;
+  font-weight: 600;
+}
+
+body .bottom .container .middle-col a:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #585989;
+  font-size: 14px;
+}
+
+body .bottom .container .middle-col .first-row ul {
+  margin-right: 10em;
+  list-style-type: none;
+  line-height: 3em;
+}
+
+body .bottom .container .middle-col .second-row ul {
+  list-style-type: none;
+  line-height: 3em;
+}
+
+body .bottom .container .right-col {
+  margin-top: 6em;
+}
+
+body .bottom .container .right-col img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  margin: 1em;
+}
+
+body .bottom .container .right-col img:hover {
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+  -webkit-transform: translateX(-1em);
+          transform: translateX(-1em);
+  fill: #585989;
+}
+
+body footer .attribution a {
+  font-family: "raleway";
+  font-weight: 700;
+  text-decoration: none;
+  color: #070439;
+}
+
+@media only screen and (max-width: 375px) {
+  body .container {
+    padding: 2em;
+  }
+  body .header {
+    padding-top: 1em;
+  }
+  body .header .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .header .container .menu {
+    font-weight: 600;
+  }
+  body .header .container .menu ul {
+    gap: 1em;
+  }
+  body .header .container img {
+    width: 8em;
+  }
+  body .hero {
+    padding: 0;
+  }
+  body .hero .hero-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .hero .hero-section .right-col img {
+    width: 250px;
+  }
+  body .hero .hero-section .left-col h1 {
+    margin-top: 1.5em;
+    text-align: center;
+    font-size: 24px;
+  }
+  body .hero .hero-section .left-col h3 {
+    margin-top: 1.5em;
+    width: 26em;
+    text-align: center;
+    font-size: 12px;
+  }
+  body .hero .hero-section .left-col .sign-up {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 1em;
+  }
+  body .hero .hero-section .left-col .sign-up input {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 23em;
+    height: 4em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-width: 0.1em;
+    border-radius: 0.3em;
+  }
+  body .hero .hero-section .left-col .sign-up a {
+    margin-top: 2em;
+    font-size: 11px;
+    padding: 1em;
+    text-align: center;
+  }
+  body .productive .desktop-curve {
+    top: -30px;
+  }
+  body .productive .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    padding-top: 5em;
+  }
+  body .productive .container .left-col {
+    margin-top: 3em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .productive .container .left-col h1 {
+    font-size: 16px;
+    text-align: center;
+  }
+  body .productive .container .left-col h3 {
+    font-size: 10px;
+    width: 30em;
+    text-align: center;
+  }
+  body .productive .container .left-col .work {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .productive .container .left-col .tweet {
+    padding: 1.5em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 2.5em;
+    margin-bottom: 5em;
+  }
+  body .productive .container .left-col .tweet h3 {
+    font-size: 8px;
+    width: 30em;
+    text-align: left;
+  }
+  body .productive .container .left-col .tweet .account {
+    margin-top: 1em;
+  }
+  body .productive .container .left-col .tweet .account img {
+    height: 35px;
+  }
+  body .productive .container .left-col .tweet .account .name {
+    line-height: 1.2em;
+  }
+  body .productive .container .left-col .tweet .account .name h4 {
+    font-size: 10px;
+  }
+  body .productive .container .left-col .tweet .account .name h5 {
+    font-size: 8px;
+  }
+  body .productive .container .right-col img {
+    width: 300px;
+  }
+  body .early-access .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .early-access .container .right-col {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 3em;
+    width: 100%;
+  }
+  body .early-access .container .right-col .email-input input {
+    width: 260px;
+    height: 4em;
+    border-width: 0.1em;
+    border-radius: 0.3em;
+  }
+  body .early-access .container .right-col a {
+    padding: 1em 6em;
+    width: 80%;
+  }
+  body .early-access .container .left-col h1 {
+    font-size: 16px;
+    text-align: center;
+  }
+  body .early-access .container .left-col h3 {
+    font-size: 10px;
+    text-align: center;
+  }
+  body .bottom .container {
+    padding-left: 3em;
+    padding-top: 5em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .bottom .container .middle-col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .bottom .container .middle-col .second-row {
+    margin-top: 3em;
+  }
+  body .bottom .container .right-col {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer {
+    background-color: #08054d;
+  }
+  footer .attribution {
+    color: white;
+    padding: 2em;
+  }
+  footer .attribution a {
+    color: white !important;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body .hero .hero-section .right-col img {
+    width: 320px;
+  }
+  body .hero .hero-section .left-col h1 {
+    font-size: 20px;
+  }
+  body .hero .hero-section .left-col h3 {
+    font-size: 12px;
+    width: 30em;
+  }
+  body .hero .hero-section .left-col .sign-up {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .hero .hero-section .left-col .sign-up a {
+    width: 19.5em;
+    height: 3em;
+    margin: 0;
+    margin-top: 1em;
+  }
+  body .productive .desktop-curve {
+    top: -50px;
+  }
+  body .productive .right-col img {
+    width: 320px;
+  }
+  body .productive .left-col {
+    top: -60px;
+  }
+  body .productive .left-col h1 {
+    font-size: 20px;
+  }
+  body .productive .left-col h3 {
+    font-size: 12px;
+    width: 30em;
+  }
+  body .productive .left-col .tweet {
+    width: 26em;
+  }
+  body .productive .left-col .tweet h3 {
+    font-size: 8px;
+    width: 35em;
+  }
+  body .productive .left-col .tweet .account {
+    margin-top: 1em;
+  }
+  body .productive .left-col .tweet .account img {
+    height: 30px;
+  }
+  body .productive .left-col .tweet .account .name {
+    line-height: 1em;
+  }
+  body .productive .left-col .tweet .account .name h4 {
+    font-size: 9px;
+  }
+  body .productive .left-col .tweet .account .name h5 {
+    font-size: 8px;
+  }
+  body .early-access .container .left-col h1 {
+    font-size: 20px;
+  }
+  body .early-access .container .left-col h3 {
+    font-size: 12px;
+  }
+  body .early-access .container .right-col {
+    width: 25em;
+  }
+  body .early-access .container .right-col .email-input input {
+    width: 30em;
+  }
+  footer {
+    background-color: #08054d;
+  }
+  footer .attribution {
+    color: white;
+    padding: 2em;
+  }
+  footer .attribution a {
+    color: white !important;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  body .header .container {
+    padding: 3em;
+  }
+  body .header .container img {
+    width: 7em;
+  }
+  body .header .container .menu ul {
+    gap: 1em;
+  }
+  body .header .container .menu ul li {
+    font-size: 10px;
+  }
+  body .hero {
+    padding-top: 2em;
+  }
+  body .hero .hero-section {
+    margin-top: 1em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  body .hero .hero-section .left-col {
+    margin-top: 3em;
+  }
+  body .hero .hero-section .left-col h1 {
+    text-align: center;
+  }
+  body .hero .hero-section .left-col h3 {
+    text-align: center;
+    width: 25em;
+  }
+  body .hero .hero-section .left-col .sign-up {
+    margin-top: 1.5em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .productive .desktop-curve {
+    top: -30px;
+  }
+  body .productive .container {
+    padding-top: 5em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  body .productive .container .left-col {
+    margin-top: 5em;
+  }
+  body .productive .container .left-col h1 {
+    text-align: center;
+    font-size: 18px;
+  }
+  body .early-access .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .early-access .container .left-col h1 {
+    font-size: 16px;
+    text-align: center;
+  }
+  body .early-access .container .left-col h3 {
+    text-align: center;
+  }
+  body .early-access .container .right-col {
+    padding: 0;
+    margin-top: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  body .early-access .container .right-col .email-input {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .early-access .container .right-col .email-input input {
+    width: 200px;
+    height: 4em;
+    border-width: 0.1em;
+    border-radius: 0.3em;
+  }
+  body .early-access .container .right-col a {
+    padding: 1em 2em;
+    width: 200px;
+    text-align: center;
+  }
+  body .bottom .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body .hero .hero-section .right-col img {
+    width: 250px;
+  }
+  body .productive .container .right-col img {
+    width: 250px;
+  }
+  body .productive .container .left-col .tweet {
+    width: 20em;
+  }
+  body .productive .container .left-col .tweet h3 {
+    width: 25em;
+  }
+  body .early-access {
+    padding-top: 2em;
+  }
+  body .early-access .container .left-col h3 {
+    width: 20em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
